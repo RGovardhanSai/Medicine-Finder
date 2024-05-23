@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Finder For Below Poverty People</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medicine Finder For Below Poverty People</h1>
+        <label for="issue">Describe the problem:</label>
+        <input type="text" id="issue" placeholder="E.g., Headache, Cold, etc.">
+        <button onclick="suggestMedicine()">Get Medicine</button>
+        <p result id="medicineResult"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+  *{
+   color: #2980b9;
+  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p {
+  margin-top: 20px;
+}
+</style>
+<script src="script.js"></script>
